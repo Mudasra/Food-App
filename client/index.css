@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* header  */
+.header {
+  @apply flex w-[100%] fixed z-50 justify-between p-6 items-center bg-[#ff2b85] text-white shadow-lg;
+}
+.header-li {
+  @apply cursor-pointer transform transition duration-300 hover:scale-120;
+}
+
+.header-btn {
+  @apply transform transition duration-500 hover:scale-100 bg-white border-[#ff2b85] cursor-pointer  text-[#ff2b85] font-bold rounded-lg px-5 py-1 shadow-lg hover:bg-[#ffe8f0] hover:translate-y-[-1px]
+}
+
+/* Search  */
+.search-input {
+  @apply hover:shadow-[0_0_0_3px_rgba(245,158,174,0.5)] duration-400  px-8 rounded-md p-1 border-2 border-[#ff2b85] focus:outline-none;
+}
+
+.search-button {
+  @apply bg-[#ff2b85] cursor-pointer text-white font-semibold px-4 py-2 rounded-md shadow-md hover:bg-[#D70F64] hover:shadow-lg transition duration-300 ease-in-out;
+}
+
+/* Res-cards  */
+.res-container {
+  @apply flex flex-wrap p-4 justify-center;
+}
+.Res-card {
+  @apply transition transform duration-300 m-4 p-3 w-[300px] bg-gray-100 hover:bg-gray-200 rounded-lg h-auto shadow-lg;
+}
+.card-img {
+  @apply w-[300px] h-[200px] object-cover rounded-lg;
+}
+.card-body{
+    @apply flex flex-col justify-center items-center
+}
+.card-title {
+    @apply font-bold py-3 text-lg
+}
+.card-rating {
+    @apply text-[#ff2b85] text-lg font-bold
+}
+.card-cuisine{
+    @apply text-gray-600 text-sm
+}
+
+/* footer  */
+.footer {
+    @apply bg-[#ff2b85]
+}
+.footer-content{
+    @apply flex justify-between p-6 px-28 text-white
+}
+.footer-links {
+    @apply flex gap-8 text-sm
+}
+.footer a {
+  @apply transform transition duration-300 hover:scale-120;
+}
+
+/* about  */
+.git-card{
+    @apply mt-[9%] w-[200px] bg-gray-100 m-11 shadow-lg flex items-center justify-center flex-col p-2 rounded-sm
+}
+/* shimmer UI  */
+.shimmer-wrapperr{
+ @apply animate-pulse space-y-4 p-4 gap-4 rounded-lg shadow-md
+}
+.shimmer-img{
+  @apply w-[100px] h-[100px] bg-gray-100 rounded-md
+}
+.shimmer-line-short{
+  @apply h-4 w-1/3 bg-gray-100 rounded
+}
+.shimmer-line {
+  @apply h-4 w-3/4 bg-gray-100 rounded
+}
